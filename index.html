@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="container m-5">
+        <form class="my_form">
+            <div class="d-flex justify-content-around m-2">
+                <p class="m-1">Rate/kg भाव/किलो</p>
+                <p class="m-1">Gram ग्राम</p>
+            </div>
+            <div class="mb-1 kg_Rate_Gram">
+                <label class="form-label">Supari/सुपारी</label>
+                <div class="d-flex gap-4">
+                    <input type="number" class="form-control input" id="Rate" placeholder="" required>
+                    <input type="number" class="form-control input" name="सुपारी" id="Gram" placeholder="" required>
+                </div>
+            </div>
+            <div class="mb-1 kg_Rate_Gram">
+                <label class="form-label">Inner/पाउच</label>
+                <div class="d-flex gap-4">
+                    <input type="number" class="form-control input" id="Rate" placeholder="" required>
+                    <input type="number" class="form-control input" id="Gram" name="पाउच" placeholder="" required>
+                </div>
+            </div>
+            <div class="mb-1 kg_Rate_Gram">
+                <label class="form-label">Outer/आउटर</label>
+                <div class="d-flex gap-4">
+                    <input type="number" class="form-control input" id="Rate" placeholder="" required>
+                    <input type="number" class="form-control input" id="Gram" name="आउटर" placeholder="" required>
+                </div>
+            </div>
+            <div class="mb-1 kg_Rate_Gram">
+                <label class="form-label">Chuna/चुना</label>
+                <div class="d-flex gap-4">
+                    <input type="number" class="form-control input" id="Rate" placeholder="" required>
+                    <input type="number" class="form-control input" id="Gram" name="चुना" placeholder="" required>
+                </div>
+            </div>
+            <div class="mb-1 kg_Rate_Gram">
+                <label class="form-label">Rubber/रबर</label>
+                <div class="d-flex gap-4">
+                    <input type="number" class="form-control input" id="Rate" placeholder="" required>
+                    <input type="number" class="form-control input" id="Gram" name="रबर" placeholder="" required>
+                </div>
+            </div>
+            <div class="mb-1 kg_Rate_Gram">
+                <label class="form-label">Plastic/थैली</label>
+                <div class="d-flex gap-4">
+                    <input type="number" class="form-control input" id="Rate" placeholder="" required>
+                    <input type="number" class="form-control input" id="Gram" placeholder="" name="थैली" required>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Tobacoo/तमाकु</label>
+                <div class="d-flex gap-4">
+                    <input type="number" class="form-control input" id="Tobaco_Rate" placeholder="प्रति बॉक्स" required>
+                    <input type="number" class="form-control input" id="Tobaco_Box" name="तमाकु"
+                        placeholder="कितना पैक " required>
+                </div>
+            </div>
+            <div class="message flex-column d-flex m-2"></div>
+            <div class="mb-2">
+                <label class="form-label">Packets</label>
+                <input type="number" placeholder="Packets" class="form-control" id="packet">
+            </div>
+            <div class="d-flex m-0 mt-3">
+                <pre class="d-flex m-0">Total_Cost = <p id="total">0</p>
+                </pre>
+            </div>
+            <div class="d-flex m-0">
+                <pre class="d-flex m-0">Total_Cost_Per_Packed = <p id="Packet_Total">0</p>
+                </pre>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
